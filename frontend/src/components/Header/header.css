@@ -1,0 +1,50 @@
+.Header {
+    background-color: #395157;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.navBarWrapper {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    justify-content: space-between;
+}
+
+.logoContentWrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 15px 10px 15px 10px;
+}
+
+.logoContentWrapper h3 {
+    font-size: 40px;
+    color: #61BF44;
+    width: 250px;
+    text-align: left;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo svg {
+    width: 100px;
+    height: 100px;
+    color: #61BF44;
+}
+
+.navLinkWrapper {
+    display: flex;
+    gap: 30px
+}
+
+.navLinkWrapper a {
+    color: white;
+    font-size: 25px;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import './HomeHero.css';
-import heroImage from './homepage-plant.png';
+// import heroImage from './homepage-plant.png';
 
 function HomeHero() {
   return (
@@ -14,9 +14,9 @@ function HomeHero() {
         <button className="hero-button">LEARN MORE</button>
       </div>
       
-      <div className="hero-image">
+      {/* <div className="hero-image">
         <img src={heroImage} alt="A person holding a potted plant" />
-      </div>
+      </div> */}
     </section>
   );
 }
