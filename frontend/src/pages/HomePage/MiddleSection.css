@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Enriqueta', serif;
+}
+
+.middle-section {
+    background-color: #FFFBE2;
+    color: #395157;
+    padding: 20px 20px;
+    padding-bottom: 800px;
+    text-align: center;
+}
+
+.middle-section h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 400;
+
+}
