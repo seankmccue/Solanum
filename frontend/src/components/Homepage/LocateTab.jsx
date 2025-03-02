@@ -9,7 +9,7 @@ function LocateTab(){
         <Link to="/locate">
         <div className="homepage-tabs">
             <div className='text-right'>
-                <h3>LOCATE A GARDEN:</h3>
+                <h3 id="locate-title">LOCATE A GARDEN:</h3>
                 <p>Find a garden on campus to meet other beginners, get advice, 
                     and learn to grow new things!
                 </p>
