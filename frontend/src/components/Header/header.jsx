@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { GiFlowerPot } from "react-icons/gi";
 import "./header.css";
+import logo from "../../assets/logo.png"
 
 function Header() {
   return (
@@ -10,7 +11,7 @@ function Header() {
         <div className="logoContentWrapper">
           <Link to="/">
             <div className="logo">
-                <GiFlowerPot />
+                <img alt="Logo" src={logo}/>
                 <h3>Urban Gardening</h3>
             </div>
           </Link>

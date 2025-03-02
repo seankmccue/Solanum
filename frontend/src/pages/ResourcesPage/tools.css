@@ -1,0 +1,8 @@
+.gallery {
+    text-align: center;
+    margin-left: 17%;
+    margin-right: 17%;
+}
+.gallery .card {
+    background: #C0E3A3;
+}

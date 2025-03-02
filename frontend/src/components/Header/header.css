@@ -3,7 +3,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+
 }
 
 .navBarWrapper {
@@ -33,10 +37,10 @@
     flex-direction: row;
 }
 
-.logo svg {
+.logo img {
     width: 100px;
-    height: 100px;
-    color: #61BF44;
+    height: 100%;
+    /* mix-blend-mode: multiply; */
 }
 
 .navLinkWrapper {
