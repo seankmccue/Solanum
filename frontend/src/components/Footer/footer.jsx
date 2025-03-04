@@ -1,33 +1,33 @@
-/* import React from "react";
-
-const Footer = () => {
-  const footerStyle = {
-    backgroundColor: "#C0E3A3", 
-    textAlign: "center",
-    padding: "1rem",
-    marginTop: "auto",
-  };
-
-  return (
-    <footer style={footerStyle}>
-      <p>© {new Date().getFullYear()} Your Website. All rights reserved.</p>
-    </footer>
-  );
-};
-
-export default Footer; */
-
 import React from "react";
+import { FaInstagram } from "react-icons/fa6";
+
 
 const Footer = () => {
   return (
-    <footer style={{ backgroundColor: "#C0E3A3", textAlign: "center", padding: "1rem", marginTop: "auto", color: "black" }}>
-      <p>Here is our footer! Let me think of a design.</p>
-    </footer>
+    <footer
+      style={{
+        backgroundColor: "#C0E3A3",
+        padding: "3rem",
+        marginTop: "auto",
+        color: "black",
+        width: "100%",
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+      }}
+    >
+      <p style={{ marginLeft: "3%", fontSize: "1.2rem" }}> Urban Gardening, dedicated to creating a more sustainable future. 
+        <br/> Contact us at ouremail@gmail.com 
+        <br/> Follow our socials for updates!</p>
+    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{ marginRight: "7%", fontSize: "4rem", color: "black" }}>
+       <FaInstagram />
+    </a>
+  </footer>
   );
 };
 
 export default Footer;
+
 
 
 
