@@ -7,15 +7,22 @@ function TutorialsTab(){
     return(
         <>
         <Link to="/guide">
-        <div className="homepage-tabs">
+        <section className="homepage-tabs">
+            
+                    
             <div className='text-left'>
                 <h3>TUTORIALS:</h3>
-                <p>Jump right into urban gardening with these simple, easy to follow 
-                    tutorials!
-                </p>
+                    <p>Jump right into urban gardeing with these simple, easy to
+                        follow tutorials!
+                    </p>
+        
             </div>
-        </div>
-        <img id='tutorials' src={tutorialsImage}/>
+            {
+                <div className="tab-images">
+                    <img src={tutorialsImage} alt="Hands in soil" />
+                </div>
+            }
+        </section>
         </Link>
         </>
     )

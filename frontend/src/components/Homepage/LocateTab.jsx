@@ -7,15 +7,19 @@ function LocateTab(){
     return(
         <>
         <Link to="/locate">
-        <div className="homepage-tabs">
+        <section className="homepage-tabs">
+            {
+                <div className="tab-images">
+                    <img src={locateImage} alt="Library Walk" />
+                </div>
+            }
             <div className='text-right'>
                 <h3 id="locate-title">LOCATE A GARDEN:</h3>
                 <p>Find a garden on campus to meet other beginners, get advice, 
                     and learn to grow new things!
                 </p>
             </div>
-        </div>
-        <img id='locate' src={locateImage}/>
+        </section>
         </Link>
         </>
     )
