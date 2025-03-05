@@ -7,15 +7,20 @@ function ResourcesTab(){
     return(
         <>
         <Link to="/resources">
-        <div className="homepage-tabs">
+        <section className="homepage-tabs">
+            {
+                <div className="tab-images">
+                    <img src={resourcesImage} alt="Pot and gloves" />
+                </div>
+            }
             <div className='text-right'>
                 <h3>RESOURCES:</h3>
                 <p>Learn more about the resources you'll need to get started and 
                     where you can buy them!
                 </p>
+
             </div>
-        </div>
-        <img id='resources'src={resourcesImage}/>
+        </section>
         </Link>
         </>
     )
