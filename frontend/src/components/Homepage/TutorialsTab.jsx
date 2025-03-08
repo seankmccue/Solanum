@@ -12,8 +12,10 @@ function TutorialsTab(){
                     
             <div className='text-left'>
                 <h3>TUTORIALS:</h3>
-                    <p>Jump right into urban gardeing with these simple, easy to
-                        follow tutorials!
+                    <p>Jump right into urban gardeing with these simple, easy to follow tutorials!<br/>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum veniam. <br/>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolores repellat. <br/>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, ab culpa.
                     </p>
         
             </div>

@@ -15,9 +15,12 @@ function ResourcesTab(){
             }
             <div className='text-right'>
                 <h3>RESOURCES:</h3>
-                <p>Learn more about the resources you'll need to get started and 
-                    where you can buy them!
+                <p>Learn more about the resources you'll need to get started and where you can buy them! <br/>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum veniam incidunt. <br/>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolores repellat molestias. <br/>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, ab culpa. Voluptates.
                 </p>
+                
 
             </div>
         </section>
