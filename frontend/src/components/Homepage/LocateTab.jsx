@@ -15,8 +15,10 @@ function LocateTab(){
             }
             <div className='text-right'>
                 <h3 id="locate-title">LOCATE A GARDEN:</h3>
-                <p>Find a garden on campus to meet other beginners, get advice, 
-                    and learn to grow new things!
+                <p>Find a garden on campus to meet other beginners, get advice, and learn to grow new things! <br/>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum veniam incidunt. <br/>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolores repellat molestias. <br/>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, ab culpa. Voluptates.
                 </p>
             </div>
         </section>

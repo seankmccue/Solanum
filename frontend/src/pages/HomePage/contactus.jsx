@@ -35,7 +35,7 @@ function ContactUs() {
                     <input type="email" id="email" value={inputEmail} onChange={handleEmailChange}/>
 
                     <label htmlFor="message">Message</label>
-                    <textarea id="message" rows="3" value={inputMessage} onChange={handleMessageChange}/>
+                    <textarea id="message" value={inputMessage} onChange={handleMessageChange}/>
 
                     <button onClick={handleClick}>Send</button>
                 </form>
