@@ -4,6 +4,7 @@
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap; /* Ensures cards wrap on smaller screens */
+    padding-bottom: 3rem;
   }
   
   /* Card styling */
