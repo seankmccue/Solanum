@@ -13,13 +13,13 @@
   }
   
   .hero-content {
-    max-width: 500px;
-    margin-right: 2rem;
+    max-width: 600px;
+    margin-right: 1.5rem;
   }
   
   .hero-content h1 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
   
   .hero-content p {
@@ -49,7 +49,7 @@
   }
   
   .hero-image img {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
     border-radius: 8px;
   }

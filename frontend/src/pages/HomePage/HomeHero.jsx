@@ -8,7 +8,13 @@ function HomeHero() {
       <div className="hero-content">
         <h1>WELCOME</h1>
         <p>
-          Welcome to Urban Gardening for Beginners at UCSD! Get ready to dig in
+          Welcome to Urban Gardening for Beginners at UCSD! Our goal is to help
+          you discover the joys of cultivating your own greens—right here on
+          campus. Whether you’re completely new to gardening or simply looking
+          to polish your skills, this platform will guide you with step-by-step
+          techniques, expert tips, and curated resources. Explore garden
+          locations in each UCSD college, connect with fellow green thumbs, and
+          watch your plants (and community) grow together. Get ready to dig in
           and start your urban gardening journey today!
         </p>
         <button className="hero-button">LEARN MORE</button>
