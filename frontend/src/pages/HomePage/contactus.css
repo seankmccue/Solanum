@@ -38,7 +38,13 @@ input, textarea {
     margin-bottom: 1.5rem;
     font-size: 1rem;
     outline: none;
+    /* margin-top: 1rem; */
 }
+
+/* textarea{
+    margin-top: -0.1rem;
+} */
+
 
 button {
     background-color: white;

@@ -16,9 +16,13 @@ const Footer = () => {
         alignItems: "center",
       }}
     >
+      
       <p style={{ marginLeft: "3%", fontSize: "1.2rem" }}> Urban Gardening, dedicated to creating a more sustainable future. 
         <br/> Contact us at ouremail@gmail.com 
-        <br/> Follow our socials for updates!</p>
+        <br/> Follow our socials for updates!
+        <br/> Made with love by Solanum
+        </p>
+        
     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{ marginRight: "7%", fontSize: "4rem", color: "black" }}>
        <FaInstagram />
     </a>
