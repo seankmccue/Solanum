@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Enriqueta', serif;
+}
+
+.faq_section {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.faq-section h3 {
+    font-size: 2.75rem;
+    font-weight: 550;
+    border-bottom: 2px solid #BABABA;
+    padding: 1rem 2rem 1rem 3rem;
+    margin: 0.5rem 2rem 0.5rem;
+    color: black;
+    text-align: center;
+}
