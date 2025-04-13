@@ -40,6 +40,12 @@ input, textarea {
     outline: none;
 }
 
+textarea {
+    width: 100%;
+    max-width: 100%;  /* optional */
+    resize: vertical; /* stops left/right resizing */
+  }
+
 button {
     background-color: #395157;;
     color: white;

@@ -1,48 +1,31 @@
-import React, { useState } from "react";
-import './contactus.css'
+import React from 'react';
+import './contactus.css';
 
 function ContactUs() {
+  return (
+    <div className="contact-section">
+      <h2>Got Any Questions?</h2>
+      <div className="form-container">
+        <form
+          id="contact-form"
+          title="contact-form"
+          action="https://formspree.io/f/xldjzkzb"
+          method="POST"
+        >
+          <label htmlFor="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
 
-    const [inputName, setInputName] = useState('');
-    const [inputEmail, setInputEmail] = useState('');
-    const [inputMessage, setInputMessage] = useState('');
+          <label htmlFor="email">Email</label>
+          <input type="email" id="email" name="email" required />
 
-    const handleNameChange = (event) => {
-        setInputName(event.target.value);
-    };
+          <label htmlFor="message">Message</label>
+          <textarea id="message" name="message" required />
 
-    const handleEmailChange = (event) => {
-        setInputEmail(event.target.value);
-    };
-
-    const handleMessageChange = (event) => {
-        setInputMessage(event.target.value);
-    };
-
-    const handleClick = (event) => {
-        
-      };
-    return (
-        <>
-        <div className="contact-section">
-            <h2>Got Any Questions?</h2>
-            <div className="form-container">
-                <form>
-                    <label htmlFor="name">Full Name</label>
-                    <input type="text" id="name" value={inputName} onChange={handleNameChange}/>
-
-                    <label htmlFor="email">Email</label>
-                    <input type="email" id="email" value={inputEmail} onChange={handleEmailChange}/>
-
-                    <label htmlFor="message">Message</label>
-                    <textarea id="message" value={inputMessage} onChange={handleMessageChange}/>
-
-                    <button onClick={handleClick}>Send</button>
-                </form>
-            </div>
-        </div>
-        </>
-    )
+          <button id="contact-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  );
 }
 
 export default ContactUs;
