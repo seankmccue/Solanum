@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Enriqueta', serif;
+}
+
+details {
+    color: black;
+    padding: 0.5rem 2rem 1rem 3rem;
+    margin: 0.5rem 2rem 0.5rem;
+    border-bottom: 2px solid #BABABA;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+details[open] {
+    padding: 0.5rem 2rem 1rem 3rem;
+}
+
+summary {
+    list-style: none; /* Removes default arrow in some browsers */
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+summary::-webkit-details-marker {
+    display: none; /* Removes default arrow in Chrome/Safari */
+}
+
+summary:after {
+    content: '▼';
+    float: right;
+    font-weight: bold;
+}
+
+details[open] summary:after {
+    content: '▲';
+}
+
+  

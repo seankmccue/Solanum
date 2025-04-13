@@ -1,7 +1,11 @@
+import FAQSection from './FAQSection.jsx'
+
 function BeginnersGuide() {
   return (
-    <h1>Beginners guide :D</h1>
-  );
+    <>
+      <FAQSection />
+    </>
+  )
 }
 
 export default BeginnersGuide;
