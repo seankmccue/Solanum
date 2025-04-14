@@ -1,33 +1,36 @@
-.card {
+.guideGalleryCard {
     text-align: center;
     color: black;
     border-radius: 25px;
-    background: white;
+    background: #C0E3A3;
     padding: 20px;
     margin: 10px 5px 20px;
     vertical-align: top;
     max-width: 250px;
-    min-height: 400px;
+    min-height: 350px;
     display: inline-block;
-    
 }
 
-.card .card-image {
+.guideGalleryCard .card-image {
     width: 100%;
     height: 150px;
     border-radius: 20px;
     margin-bottom: 10px;
 }
 
-.card .card-title {
+.guideGalleryCard .card-title {
     text-align: center;
+    padding: 1rem;
     margin: 0;
     color: #395157;
+    border-radius: 20px;
+    background-color: #BBBDAC;
     white-space: nowrap;
     font-size: 1.3rem;
 }
 
-.card .card-text {
+.guideGalleryCard .card-text {
     color: black;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    text-align: left;
 }
