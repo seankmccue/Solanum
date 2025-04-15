@@ -1,39 +1,45 @@
 import React from "react";
 import { FaInstagram } from "react-icons/fa6";
+import { MdOutlineEmail } from "react-icons/md";
+import "./footer.css";
 
-
-const Footer = () => {
+function Footer() {
   return (
-    <footer
-      style={{
-        backgroundColor: "#C0E3A3",
-        padding: "3rem",
-        marginTop: "auto",
-        color: "black",
-        width: "100%",
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-      }}
-    >
-      
-      <p style={{ marginLeft: "3%", fontSize: "1.2rem" }}> Urban Gardening, dedicated to creating a more sustainable future. 
-        <br/> Contact us at ouremail@gmail.com 
-        <br/> Follow our socials for updates!
-        <br/> Made with love by Solanum
+    <footer className="Footer">
+      <div className="footerWrapper">
+        <div className="footerContentRow">
+          <div className="footerText">
+            <p className="footerName">SOLANUM</p>
+            <p className="footerDetails">
+              Are your plants lost? At Solanum they will find their forever home!
+              <br />
+              Don't wander off ... contact us at solanumsgarden@gmail.com
+              <br />
+              Made with love by Solanum
+            </p>
+          </div>
+
+          <div className="footerIcon">
+            Contact Us:
+            <br />
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <FaInstagram />
+            </a>
+            <a href="https://gmail.com" target="_blank" rel="noopener noreferrer">
+              <MdOutlineEmail />
+            </a>
+          </div>
+        </div>
+
+        <hr className="footerLine" />
+
+        <p className="footerDetails copyright">
+          © 2025 ACM Hack Team 2, hope you had a good visit
         </p>
-        
-    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{ marginRight: "7%", fontSize: "4rem", color: "black" }}>
-       <FaInstagram />
-    </a>
-  </footer>
+      </div>
+    </footer>
   );
-};
+}
 
 export default Footer;
-
-
-
-
-
 

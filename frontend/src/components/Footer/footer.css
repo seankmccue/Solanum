@@ -1,6 +1,7 @@
-.footer {
-  background-color: #C0E3A3; 
-  color: black;
+
+.Footer {
+  background-color: #395157; 
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 20px;
   font-size: 16px;
@@ -8,4 +9,41 @@
   bottom: 0;
   width: 100%;
 }
+.footerContentRow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footerName {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.footerDetails {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  font-weight: lighter;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.footerIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: right;
+  gap: 1.5rem;
+  font-size: 2rem;
+}
+
+.footerIcon a {
+  color: #fcfeff;
+}
+
+.copyright {
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+
 
