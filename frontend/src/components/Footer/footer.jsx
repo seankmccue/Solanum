@@ -1,6 +1,9 @@
 import React from "react";
 import { FaInstagram } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
+import { FaFacebook } from "react-icons/fa";
+import { CiLinkedin } from "react-icons/ci";
+
 import "./footer.css";
 
 function Footer() {
@@ -11,26 +14,30 @@ function Footer() {
           <div className="footerText">
             <p className="footerName">SOLANUM</p>
             <p className="footerDetails">
-              Are your plants lost? At Solanum they will find their forever home!
-              <br />
-              Don't wander off ... contact us at solanumsgarden@gmail.com
-              <br />
+              9500 Gilman Dr
+              <br /> 
+              La Jolla, CA 92093
+              <br /> 
               Made with love by Solanum
             </p>
           </div>
 
           <div className="footerIcon">
-            Contact Us:
-            <br />
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
             <a href="https://gmail.com" target="_blank" rel="noopener noreferrer">
               <MdOutlineEmail />
             </a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+              <FaFacebook />
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+              <CiLinkedin />
+            </a>
           </div>
         </div>
-
+        <br />
         <hr className="footerLine" />
 
         <p className="footerDetails copyright">
