@@ -28,11 +28,11 @@
 
 .footerIcon {
   position: absolute;
-  top: 30px;          
+  top: 40px;          
   right: 3rem;        
   display: flex;
   gap: 2rem;        
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 
 .footerIcon a {
