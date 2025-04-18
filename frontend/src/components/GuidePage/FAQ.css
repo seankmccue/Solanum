@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: 'Enriqueta', serif;
 }
-
+.faq-container {
+    margin-bottom: 4.5rem;
+}
 details {
     color: black;
     padding: 0.5rem 2rem 1rem 3rem;
