@@ -30,7 +30,7 @@
 }
 
 .guideGalleryCard .card-text {
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 1.1rem;
     text-align: left;
 }
