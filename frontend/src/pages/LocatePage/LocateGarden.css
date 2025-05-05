@@ -1,6 +1,6 @@
 .locate-wrapper {
     min-height: 100vh;
-    padding: 2rem 1rem 3rem;
+    padding: 2rem 2rem 3rem;
     background: #fffbe8;
     font-family: "Georgia", serif;
   }
@@ -10,7 +10,7 @@
     font-weight: 700;
     font-size: clamp(1.9rem, 5vw, 3.2rem);
     line-height: 1.15;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
   }
 
   .clubs {
