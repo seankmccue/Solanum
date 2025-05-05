@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState} from "react";
 import "./LocateGarden.css";
 
 /* ------- images (all in src/assets/) ---------------- */
@@ -9,6 +9,21 @@ import illusSpinach from "../../assets/spinach.png";
 import instaIcon from "../../assets/instagram.png";
 
 export default function LocateGarden() {
+  const [gardens, setGardens] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:8080/api/garden")
+      .then((res) => res.json())
+      .then((data) => {
+        setGardens(data);
+      })
+      .catch((err) => {
+        console.error("Error fetching gardens:", err);
+      });
+  }, []);
+
+  const gardenImages = [illusGardening, illusGarden, illusFlowers, illusSpinach];
+
   return (
     <main className="locate-wrapper">
       <h1 className="locate-title">
@@ -18,81 +33,33 @@ export default function LocateGarden() {
       </h1>
 
       <section className="clubs">
-        {/* 1 ─ Marshall Community Garden */}
-        <div className="club-row">
-          <img src={illusGardening} alt="" className="side-illus" />
-          <div className="club-card">
-            <div className="club-header">
-              <img
-                src={instaIcon}
-                alt="Instagram icon"
-                className="insta-icon"
-              />
-              <h2>MARSHALL COMMUNITY GARDEN</h2>
+        {gardens.map((garden, index) => (
+          <div key={index} className="club-row">
+            <img
+              src={gardenImages[index % gardenImages.length]}
+              alt=""
+              className="side-illus"
+            />
+            <div className="club-card">
+              <div className="club-header">
+              {(
+                <a
+                  href={`https://instagram.com/${garden.instagram}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={instaIcon} alt="Instagram Icon" className="insta-icon" />
+                </a>
+              )}
+              <h2>{garden.name.toUpperCase()}</h2>
+              </div>
+              {garden.mission && <p><strong>Mission:</strong> {garden.mission}</p>}
+              <p><strong>Location:</strong> {garden.location}</p>
+              {garden.email && <p><strong>Contact:</strong> {garden.email}</p>}
+              {garden.instagram && <p><strong>Instagram:</strong> {garden.instagram}</p>}
             </div>
-            <p>
-              Lorem ipsum dolor sit amet. Sed nemo explicabo est earum nostrum
-              quo voluptates omnis eos culpa magnam.
-            </p>
           </div>
-        </div>
-
-        {/* 2 ─ Roger’s Community Garden */}
-        <div className="club-row">
-          <img src={illusGarden} alt="" className="side-illus" />
-          <div className="club-card">
-            <div className="club-header">
-              <img
-                src={instaIcon}
-                alt="Instagram icon"
-                className="insta-icon"
-              />
-              <h2>ROGER’S COMMUNITY GARDEN</h2>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet. Sed nemo explicabo est earum nostrum
-              quo voluptates omnis eos culpa magnam.
-            </p>
-          </div>
-        </div>
-
-        {/* 3 ─ Warren Grow */}
-        <div className="club-row">
-          <img src={illusFlowers} alt="" className="side-illus" />
-          <div className="club-card">
-            <div className="club-header">
-              <img
-                src={instaIcon}
-                alt="Instagram icon"
-                className="insta-icon"
-              />
-              <h2>WARREN GROW</h2>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet. Sed nemo explicabo est earum nostrum
-              quo voluptates omnis eos culpa magnam.
-            </p>
-          </div>
-        </div>
-
-        {/* 4 ─ Seventh College Garden */}
-        <div className="club-row">
-          <img src={illusSpinach} alt="" className="side-illus" />
-          <div className="club-card">
-            <div className="club-header">
-              <img
-                src={instaIcon}
-                alt="Instagram icon"
-                className="insta-icon"
-              />
-              <h2>SEVENTH COLLEGE GARDEN</h2>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet. Sed nemo explicabo est earum nostrum
-              quo voluptates omnis eos culpa magnam.
-            </p>
-          </div>
-        </div>
+        ))}
       </section>
     </main>
   );
