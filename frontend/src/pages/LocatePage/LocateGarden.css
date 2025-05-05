@@ -1,80 +1,79 @@
 .locate-wrapper {
-    min-height: 100vh;
-    padding: 2rem 2rem 3rem;
-    background: #fffbe8;
-    font-family: "Georgia", serif;
-  }
-  
-  .locate-title {
-    color: #36454f;
-    font-weight: 700;
-    font-size: clamp(1.9rem, 5vw, 3.2rem);
-    line-height: 1.15;
-    margin-bottom: 3rem;
+  min-height: 100vh;
+  padding: 2rem 1rem 3rem;
+  background: #fffbe8;
+  font-family: "Georgia", serif;
+}
+
+.locate-title {
+  color: #36454f;
+  font-weight: 700;
+  font-size: clamp(1.9rem, 5vw, 3.2rem);
+  line-height: 1.15;
+  margin-bottom: 5rem;
+}
+
+.clubs {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.club-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 5rem;
+}
+
+.side-illus {
+  width: 120px;
+  flex-shrink: 0;
+}
+
+.club-card {
+  flex: 1;
+  background: #d9ded4;
+  border-radius: 1rem;
+  padding: 1.4rem 1.6rem;
+}
+
+.club-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.7rem;
+}
+
+.club-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #204050;
+  letter-spacing: 0.5px;
+}
+
+.insta-icon {
+  width: 30px;
+  height: auto;
+}
+
+.club-card p {
+  margin: 0;
+  font-size: 0.97rem;
+  line-height: 1.45;
+  color: #204050;
+}
+
+@media (max-width: 640px) {
+  .club-row {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .clubs {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-  }
-  
-  .club-row {
-    display: flex;
-    align-items: flex-start;
-    gap: 5rem;
-  }
-  
   .side-illus {
-    width: 120px;
-    flex-shrink: 0;
+    width: 100px;
   }
-  
+
   .club-card {
-    flex: 1;
-    background: #d9ded4;
-    border-radius: 1rem;
-    padding: 1.4rem 1.6rem;
+    width: 100%;
   }
-  
-  .club-header {
-    display: flex;
-    align-items: center;
-    gap: 0.65rem;
-    margin-bottom: 0.7rem;
-  }
-  
-  .club-header h2 {
-    margin: 0;
-    font-size: 1.25rem;
-    color: #204050;
-    letter-spacing: 0.5px;
-  }
-  
-  .insta-icon {
-    width: 30px;
-    height: auto;
-  }
-  
-  .club-card p {
-    margin: 0;
-    font-size: 0.97rem;
-    line-height: 1.45;
-    color: #204050;
-  }
-  
-  @media (max-width: 640px) {
-    .club-row {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .side-illus {
-      width: 100px;
-    }
-  
-    .club-card {
-      width: 100%;
-    }
-  }
-  
+}
