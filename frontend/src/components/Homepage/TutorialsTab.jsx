@@ -12,10 +12,11 @@ function TutorialsTab(){
                     
             <div className='text-left'>
                 <h3>TUTORIALS:</h3>
-                    <p>Jump right into urban gardeing with these simple, easy to follow tutorials!<br/>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum veniam. <br/>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolores repellat. <br/>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, ab culpa.
+                    <p>Jump right into urban gardening with these simple, easy-to-follow tutorials <br/>
+                    designed for beginners. Whether you have a balcony, windowsill, or small  <br/>backyard, 
+                    you’ll learn how to make the most of your space. Each guide breaks <br/>down the basics— 
+                    from choosing containers and soil to planting and maintenance—  <br/>so you can start growing 
+                    with confidence.
                     </p>
         
             </div>
