@@ -14,7 +14,10 @@ function HomeHero() {
           to polish your skills, this platform will guide you with step-by-step
           techniques, expert tips, and curated resources.
         </p>
-        <button className="hero-button">LEARN MORE</button>
+        <a href="#about-section">
+          <button className="hero-button">LEARN MORE</button>
+        </a>
+        
       </div>
 
       {
