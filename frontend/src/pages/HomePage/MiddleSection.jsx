@@ -6,7 +6,7 @@ import LocateTab from '../../components/Homepage/LocateTab';
 function MiddleSection() {
     return (
         <>
-        <div className="middle-section">
+        <div id="about-section" className="middle-section">
             <h3>“The love of gardening is a seed once sown that never dies”</h3>
             <ResourcesTab/>
             <TutorialsTab/>
