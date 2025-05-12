@@ -55,3 +55,18 @@
     color: white;
     font-size: 25px;
 }
+
+#resources-link:hover {
+    color: #61BF44;
+    transition: all 0.3s ease;
+}
+
+#guide-link:hover {
+    color: #61BF44;
+    transition: all 0.3s ease;
+}
+
+#locate-link:hover {
+    color: #61BF44;
+    transition: all 0.3s ease;
+}
