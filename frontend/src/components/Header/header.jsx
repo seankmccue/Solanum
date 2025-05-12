@@ -17,9 +17,9 @@ function Header() {
           </Link>
         </div>
         <div className="navLinkWrapper">
-          <Link to="/resources">Resources</Link>
-          <Link to="/guide">Beginner's Guide</Link>
-          <Link to="/locate">Locate a Garden</Link>
+          <Link to="/resources" id="resources-link">Resources</Link>
+          <Link to="/guide" id="guide-link">Beginner's Guide</Link>
+          <Link to="/locate" id="locate-link">Locate a Garden</Link>
         </div>
       </div>
     </nav>
