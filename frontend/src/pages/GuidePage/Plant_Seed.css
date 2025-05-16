@@ -1,3 +1,6 @@
+/* === Plant_Seed.css === */
+
+/* Page wrapper */
 .plant-page {
   min-height: 100vh;
   padding: 2rem 0;
@@ -6,6 +9,7 @@
   text-align: center;
 }
 
+/* Title */
 .title {
   font-size: clamp(2rem, 6vw, 3.5rem);
   margin-bottom: 2rem;
@@ -14,6 +18,7 @@
   letter-spacing: 2px;
 }
 
+/* Row that holds the flip‑cards */
 .card-row {
   display: flex;
   justify-content: center;
@@ -21,7 +26,7 @@
   flex-wrap: wrap;
 }
 
-/* ---------- individual flip-card ---------- */
+/* ---------- individual flip‑card ---------- */
 .card {
   width: 350px;
   height: 520px;
@@ -54,6 +59,7 @@
   background: linear-gradient(#e6e6e9 0%, #ffffff 100%);
 }
 
+/* ---------- front face ---------- */
 .card__front h2 {
   margin: 1.2rem auto 1rem;
   font-size: 1.3rem;
@@ -61,15 +67,24 @@
   color: #395157;
 }
 
+/* Size tweaks so APNG icons fit nicely */
 .card__front img {
-  width: 80%;
+  max-width: 220px;   /* keeps icon from overflowing horizontally */
+  width: 65%;         /* scales relative to card width on small screens */
+  max-height: 260px;  /* keeps icon from pushing the card too tall */
   height: auto;
   margin: 0 auto;
-  object-fit: cover;
+  object-fit: contain; /* maintain full icon without cropping */
   border-radius: 0.5rem;
   flex-grow: 1;
 }
 
+/* Allow a direct class for clarity if you want extra overrides */
+.animated-icon {
+  display: block;
+}
+
+/* ---------- back face ---------- */
 .card__back {
   transform: rotateY(180deg);
   padding: 2rem 1.5rem;

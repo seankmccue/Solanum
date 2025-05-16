@@ -1,72 +1,90 @@
 import React, { useState } from "react";
 import "./Plant_Seed.css";
 
-import houseplantsImg from "../../assets/HousePlants.png";
-import fruitsImg from "../../assets/Fruits.png";
-import beginnerImg from "../../assets/Beginner_Friendly.png";
+// Animated PNG (APNG) icons
+import houseplantsAnim from "../../assets/HousePlants.apng";
+import fruitsAnim from "../../assets/Fruits.apng";
+import beginnerAnim from "../../assets/Beginner_Friendly.apng";
 
+/**
+ * Flip‑card showcase for three categories of plants/seeds.
+ * Each front face now displays an APNG that loops automatically.
+ */
 export default function Plant_Seed() {
-  const [flip1, setFlip1] = useState(false);
-  const [flip2, setFlip2] = useState(false);
-  const [flip3, setFlip3] = useState(false);
+  const [flipped, setFlipped] = useState([false, false, false]);
+
+  const toggleCard = (index) =>
+    setFlipped((prev) => prev.map((f, i) => (i === index ? !f : f)));
 
   return (
     <main className="plant-page">
-      <h1 className="title">PLANTS/SEEDS</h1>
+      <h1 className="title">PLANTS / SEEDS</h1>
 
       <section className="card-row">
-        {/* 1 ─ HOUSEPLANTS */}
+        {/* HOUSEPLANTS */}
         <div
-          className={`card ${flip1 ? "flipped" : ""}`}
-          onClick={() => setFlip1(!flip1)}
+          className={`card ${flipped[0] ? "flipped" : ""}`}
+          onClick={() => toggleCard(0)}
         >
           <div className="card__inner">
             <div className="card__face card__front">
               <h2>HOUSEPLANTS</h2>
-              <img src={houseplantsImg} alt="Assorted houseplants" />
+              <img
+                src={houseplantsAnim}
+                alt="Animated icon of assorted houseplants"
+                className="animated-icon"
+              />
             </div>
             <div className="card__face card__back">
               <p>
-                Low-light-tolerant classics such as pothos, snake plant, and ZZ
-                thrive indoors with minimal fuss.
+                Bring the outdoors in with leafy greens that thrive on a sunny
+                windowsill—from pothos to spider plants.
               </p>
             </div>
           </div>
         </div>
 
-        {/* 2 ─ FRUITS / VEGGIES */}
+        {/* FRUITS */}
         <div
-          className={`card ${flip2 ? "flipped" : ""}`}
-          onClick={() => setFlip2(!flip2)}
+          className={`card ${flipped[1] ? "flipped" : ""}`}
+          onClick={() => toggleCard(1)}
         >
           <div className="card__inner">
             <div className="card__face card__front">
               <h2>FRUITS</h2>
-              <img src={fruitsImg} alt="Orange tree laden with fruit" />
+              <img
+                src={fruitsAnim}
+                alt="Animated icon of a fruit tree"
+                className="animated-icon"
+              />
             </div>
             <div className="card__face card__back">
               <p>
-                Grow your own produce! Patio tomatoes, peppers, or dwarf citrus
-                all do well in containers.
+                Dwarf citrus, strawberries, and tomatoes can all flourish in
+                small urban gardens or roomy pots.
               </p>
             </div>
           </div>
         </div>
 
-        {/* 3 ─ BEGINNER FRIENDLY */}
+        {/* BEGINNER FRIENDLY */}
         <div
-          className={`card ${flip3 ? "flipped" : ""}`}
-          onClick={() => setFlip3(!flip3)}
+          className={`card ${flipped[2] ? "flipped" : ""}`}
+          onClick={() => toggleCard(2)}
         >
           <div className="card__inner">
             <div className="card__face card__front">
               <h2>BEGINNER</h2>
-              <img src={beginnerImg} alt="Potted succulent" />
+              <img
+                src={beginnerAnim}
+                alt="Animated icon of a succulent in a pot"
+                className="animated-icon"
+              />
             </div>
             <div className="card__face card__back">
               <p>
-                Hard-to-kill options such as succulents and hardy herbs are
-                perfect for first-time growers.
+                Hard‑to‑kill options like succulents and robust herbs are
+                perfect for first‑time growers.
               </p>
             </div>
           </div>
