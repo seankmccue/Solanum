@@ -16,7 +16,9 @@
 }
 
 .guideGallery .guideGalleryCard:hover {
-    background-color: #395157d8;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px #395157;
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 

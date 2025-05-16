@@ -1,11 +1,12 @@
 import Card from "../../components/Card/card.jsx"
+
 import "./tools.css"
-import can from '../../assets/can.avif'
-import gloves from '../../assets/gloves.avif'
-import hoe from '../../assets/hoe.avif'
-import rake from '../../assets/rake.avif'
-import shears from '../../assets/shears.avif'
-import trowel from '../../assets/trowel.avif'
+import watercan from '../../assets/watering-can.gif'
+import trowel from '../../assets/trowel.gif'
+import gloves from '../../assets/gloves.gif'
+import hoe from '../../assets/hoe.png'
+import rake from '../../assets/rake.gif'
+import shears from '../../assets/shears.gif'
 
 
 function Tools() {
@@ -14,7 +15,7 @@ function Tools() {
             <div className="gallery">
                 <Card
                     title="WATERING CAN"
-                    image={can}
+                    image={watercan}
                     text="Watering cans are useful in helping you control the amount 
                             of water you provide to your plants."
                 />
