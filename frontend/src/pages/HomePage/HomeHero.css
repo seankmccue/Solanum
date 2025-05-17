@@ -40,11 +40,13 @@
     border: none;
     cursor: pointer;
     font-size: 1rem;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .hero-button:hover {
     background-color: #395157;
+    transform: scale(1.05);
+
   }
   
   .hero-image {

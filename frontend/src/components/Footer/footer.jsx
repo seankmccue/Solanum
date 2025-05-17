@@ -3,6 +3,8 @@ import { FaInstagram } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaFacebook } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
+import { FaHeart } from "react-icons/fa6";
+
 
 import "./footer.css";
 
@@ -18,7 +20,7 @@ function Footer() {
               <br /> 
               La Jolla, CA 92093
               <br /> 
-              Made with love by Solanum
+              Made with <FaHeart /> by Solanum
             </p>
           </div>
 
