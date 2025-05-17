@@ -62,7 +62,7 @@ export default function LocateGarden() {
               {garden.mission && <p><strong>Mission:</strong> {garden.mission}</p>}
               <p><strong>Location:</strong> {garden.location}</p>
               {garden.email && <p><strong>Contact:</strong> {garden.email}</p>}
-              {garden.instagram && <p><strong>Instagram:</strong> {garden.instagram}</p>}
+              {garden.instagram && <p><strong>Instagram:</strong> @{garden.instagram}</p>}
             </div>
           </div>
         ))}
