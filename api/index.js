@@ -19,14 +19,9 @@ const gardenSchema = new mongoose.Schema({
 const Gardens = mongoose.model("Garden", gardenSchema, "Gardens");
 
 mongoose.connect(process.env.MONGO_URI)
-.then(async () => {console.log("Database connection successful");}).catch((err) => console.error("Database connection error:", err))
-.catch(err => {
-  console.error("❌ Mongo connection error:", err);
-  process.exit(1);
-});
+.then(async () => {console.log("Database connection successful");}).catch((err) => console.error("Database connection error:", err));
 
-
-app.get("/api/garden", async (req, res) => {
+app.get("/garden", async (req, res) => {
   try {
     const gardens = await Gardens.find();
     res.json(gardens);
