@@ -21,5 +21,8 @@
   "homepage": "https://github.com/acmucsd-projects/wi25-hack-team-2#readme",
   "dependencies": {
     "concurrently": "^9.1.2"
+  },
+  "engines": {
+  "node": "18.x"
   }
 }
