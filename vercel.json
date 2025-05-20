@@ -1,6 +1,6 @@
 {
-  "buildCommand": "npm install && cd ../api && npm install && cd ../frontend && npm install && npm run build",
-  "outputDirectory": "dist",
+  "buildCommand": "npm install && cd api && npm install && cd ../frontend && npm install && npm run build",
+  "outputDirectory": "frontend/dist",
   "framework": "vite",
   "rewrites": [
     { "source": "/api/:match*", "destination": "/api/index.js" }
