@@ -27,7 +27,7 @@ async function connectToDatabase() {
   isConnected = true;
 }
 
-app.get("/garden", async (req, res) => {
+app.get("/api/garden", async (req, res) => {
   try {
     await connectToDatabase();
     const gardens = await Gardens.find();
