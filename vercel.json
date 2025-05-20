@@ -4,6 +4,10 @@
   "framework": "vite",
   "rewrites": [
     { "source": "/api/:match*", "destination": "/api/index.js" }
-  ]
+  ],
+  "functions": {
+    "api/index.js": {
+      "maxDuration": 10
+    }
+  }
 }
-

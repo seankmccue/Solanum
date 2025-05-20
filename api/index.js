@@ -1,37 +1,41 @@
 require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
-const cors = require('cors'); 
+const cors = require("cors");
 const serverless = require("serverless-http");
 
 const app = express();
-
 app.use(cors());
 
 const gardenSchema = new mongoose.Schema({
-    name: String,
-    mission: String,
-    location: String,
-    instagram: String,
-    email: String
+  name: String,
+  mission: String,
+  location: String,
+  instagram: String,
+  email: String
 });
 
-const Gardens = mongoose.model("Garden", gardenSchema, "Gardens");
+const Gardens = mongoose.models.Garden || mongoose.model("Garden", gardenSchema, "Gardens");
 
-mongoose.connect(process.env.MONGO_URI)
-.then(async () => {console.log("Database connection successful");}).catch((err) => console.error("Database connection error:", err));
+let isConnected = false;
+async function connectToDatabase() {
+  if (isConnected) return;
+  await mongoose.connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  });
+  isConnected = true;
+}
 
 app.get("/garden", async (req, res) => {
   try {
+    await connectToDatabase();
     const gardens = await Gardens.find();
     res.json(gardens);
   } catch (err) {
+    console.error("❌ Error fetching gardens:", err);
     res.status(500).json({ error: "Failed to fetch gardens" });
   }
 });
-
-// app.listen(8080, function () {
-//     console.log("server listening on port 8080");
-// });
 
 module.exports = serverless(app);
