@@ -15,7 +15,7 @@ export default function LocateGarden() {
 
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/garden")
+    fetch("/api/garden")
       .then((res) => res.json())
       .then((data) => {
         setGardens(data);

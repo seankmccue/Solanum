@@ -1,6 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require('cors'); 
+const serverless = require("serverless-http");
+
 const app = express();
 
 app.use(cors());
@@ -28,6 +30,8 @@ app.get("/api/garden", async (req, res) => {
   }
 });
 
-app.listen(8080, function () {
-    console.log("server listening on port 8080");
-});
+// app.listen(8080, function () {
+//     console.log("server listening on port 8080");
+// });
+
+module.exports = serverless(app);
