@@ -16,5 +16,8 @@
     "mongoose": "^8.14.1",
     "npm": "^11.4.0",
     "serverless-http": "^3.2.0"
+  },
+  "engines": {
+  "node": "18.x"
   }
 }
