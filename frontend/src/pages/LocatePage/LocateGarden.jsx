@@ -1,5 +1,6 @@
 import React, { useEffect, useState} from "react";
 import "./LocateGarden.css";
+const API_BASE = import.meta.env.VITE_API_BASE
 
 
 /* ------- images (all in src/assets/) ---------------- */
@@ -15,7 +16,7 @@ export default function LocateGarden() {
 
 
   useEffect(() => {
-    fetch("/api/garden")
+    fetch(`${API_BASE}/api/garden`)
       .then((res) => res.json())
       .then((data) => {
         setGardens(data);
