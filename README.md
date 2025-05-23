@@ -29,7 +29,25 @@
 ## 03 Design Process
 
 `1. Inspiration`
-- We wanted to go for neutral and earthy colors with a simple UI design to contrast the many bright and maximilist gardening websites that already exist. We wanted our website to have a more modern aesthetic to attract college students and younger generations. 
+- We chose neutral, earthy colors and a simple UI design to contrast the bright and maximalist aesthetic of many existing gardening websites. Our goal was to create a more modern look that would appeal to college students and younger audiences.
 <p align="center">
   <img src="https://github.com/acmucsd-projects/wi25-hack-team-2/blob/main/imgs/moodboards.png" width="320" height="215"/>
 </p>
+
+`2. Sketching process/Wireframing`
+- We drew inspiration from various university organization and club websites, such as DS3 at UCSD and Design at Berkeley, to achieve a minimal and clean aesthetic that appeals to college students. We sketched out two interface designs that incorporated commonly seen features, like contact forms and FAQ sections, as well as features we specifically wanted to include, such as beginner tutorials.
+<p align="center">
+  <img src="https://github.com/acmucsd-projects/wi25-hack-team-2/blob/main/imgs/wireframing.png" width="315" height="215"/>
+</p>
+
+`3. Protoyping/lo-fis`
+- With only minor adjustments, nearly all the features from our low-fidelity designs were carried over into our high-fidelity prototypes. At this stage, our goals felt realistic and achievable, and we were confident in our ability to implement everything we had outlined.
+<p align="center">
+  <img src="https://github.com/acmucsd-projects/wi25-hack-team-2/blob/main/imgs/lo-fis.png" width="410" height="300"/>
+</p>   
+
+`4. Final Designs/hi-fis`
+- These are the final designs we chose to implement for our app. We were able to implement every featurem, with only minor changes such as adjustments to image choice.
+<p align="center">
+  <img src="https://github.com/acmucsd-projects/wi25-hack-team-2/blob/main/imgs/hi-fis.png" width="410" height="300"/>
+</p>  
