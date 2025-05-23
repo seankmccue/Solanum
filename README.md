@@ -31,5 +31,5 @@
 `1. Inspiration`
 - We wanted to go for neutral and earthy colors with a simple UI design to contrast the many bright and maximilist gardening websites that already exist. We wanted our website to have a more modern aesthetic to attract college students and younger generations. 
 <p align="center">
-  <img src="https://github.com/acmucsd-projects/wi25-hack-team-2/imgs/](https://github.com/acmucsd-projects/wi25-hack-team-2/blob/main/imgs/moodboards.png" width="320" height="215"/>
+  <img src="https://github.com/acmucsd-projects/wi25-hack-team-2/blob/main/imgs/moodboards.png" width="320" height="215"/>
 </p>
