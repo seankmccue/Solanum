@@ -3,7 +3,7 @@
 ## 01 Background/Inspiration
 - `Our idea` - We were inspired by making a place where people, specifically college students and younger generations, can easily start urban gardening and access all the necessary resources
     - Saw a lack of fresh produce (fruits/veggies) available at UCSD
-    - Limited slection of gardening website targeted at younger generations and beginners
+    - Limited selection of gardening website targeted at younger generations and beginners
 - `Our product` - A website where beginners can start Urban Gardening
     - Learn about necessary tools and resources to start gardening plus where to buy them
     - Watch tutorials to grow different houseplants, fruits, vegetables, and beginner friendly plants
