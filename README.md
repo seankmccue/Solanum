@@ -51,3 +51,38 @@
 <p align="center">
   <img src="https://github.com/acmucsd-projects/wi25-hack-team-2/blob/main/imgs/hi-fis.png" width="530" height="300"/>
 </p>  
+
+## 04 **Technical Process**
+
+- Learning phase -> Learning tech stack and code syntax by reviewing mentor provided notes, watching tutorials, and online research 
+- Meetings -> Outline weekly goals (pages, features, etc.) and delegate tasks
+- Features -> Each person worked on different features and pushed code to their branch
+
+
+## 05 Our tech stack 
+
+- Figma
+- Vite React
+- ExpressJS
+- Node.js
+- MongoDB
+- HTML
+- CSS
+- Javascript
+
+## 06 Challenges
+
+- Creating manageable goals for the given timeframe
+- Balancing our classes
+- Figuring out backend
+- Implementing necessary packages
+
+## 07 Reflection
+
+- Experiment with web scraper
+- Work more with backend
+- Develop CSS conventions across project
+
+---
+
+# 💻 MERN stack template
