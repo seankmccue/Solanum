@@ -86,4 +86,5 @@
 
 ---
 
-# 💻 MERN stack template
+# Check it out!
+https://solanum.vercel.app/
