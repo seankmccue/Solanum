@@ -86,4 +86,5 @@
 
 ---
 
-# 💻 Check it out! → https://solanum.vercel.app/
+# Check it out!
+https://solanum.vercel.app/
